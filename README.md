@@ -1,4 +1,4 @@
-# indie-catalog
+# retro-app-catalog
 
 This repo contains a web components catalog that you can host yourself.
 It's intended for companies that have private elements and would like
@@ -7,7 +7,7 @@ webcomponents.org.
 
 ## Step 0. Clone this repo.
 ```
-git clone https://github.com/PolymerLabs/indie-catalog.git
+git clone https://github.com/annsonn/retro-app-catalog.git
 cd indie-catalog
 ```
 
