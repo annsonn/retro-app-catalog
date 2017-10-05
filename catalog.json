@@ -1,26 +1,76 @@
 {
   "packages": {
-    "paper-input": {
-      "git": "https://github.com/polymerelements/paper-input",
-      "description": "A Material Design text field"
+    "wired-button": {
+      "git": "https://github.com/wiredjs/wired-button",
+      "description": "Hand drawn Button component"
     },
-    "paper-button": {
-      "git": "https://github.com/polymerelements/paper-button",
-      "description": "A Material Design button"
+    "wired-checkbox": {
+      "git": "https://github.com/wiredjs/wired-checkbox",
+      "description": "Checkbox webcomponent with hand-drawn sketchy look"
     },
-    "paper-checkbox": {
-      "description": "A Material Design checkbox with remote docs and demo",
-      "demo": "https://raw-dot-custom-elements.appspot.com/PolymerElements/paper-checkbox/v2.0.0/paper-checkbox/demo/index.html",
-      "docs": "https://www.webcomponents.org/element/PolymerElements/paper-checkbox"
+    "wired-radio": {
+      "git": "https://github.com/wiredjs/wired-radio",
+      "description": "Radio button with hand-drawn look"
     },
-    "emoji-rain": {
-      "git": "https://github.com/notwaldorf/emoji-rain",
-      "description": "A magical emoji rain element"
+    "wired-radio-group": {
+      "git": "https://github.com/wiredjs/wired-radio-group",
+      "description": "Allows user to select at most one radio button from a set. Works with wired-radio."
     },
-    "lazy-image": {
-      "git": "https://github.com/notwaldorf/lazy-image",
-      "description": "A custom image element that lets you load resources on demand",
-      "demo": "dist/lazy-image/bower_components/lazy-image/index.html"    
+    "wired-toggle": {
+      "git": "https://github.com/wiredjs/wired-toggle",
+      "description": "Hand drawn toggle component"
+    },
+    "wired-item": {
+      "git": "https://github.com/wiredjs/wired-item",
+      "description": "wired-item is a list item used by Wired components like wired-combo and wired-list-box"
+    },
+    "wired-listbox": {
+      "git": "https://github.com/wiredjs/wired-listbox",
+      "description": "A listbox control with Wired hand-drawn styling. The selected item is highlighted. Can be vertical (default) or horizontal."
+    },
+    "wired-progress": {
+      "git": "https://github.com/wiredjs/wired-button",
+      "description": "A progress indicator control with a hand-drawn wireframe look."
+    },
+    "wired-input": {
+      "git": "https://github.com/wiredjs/wired-input",
+      "description": "A single-line text field with hand-drawn, wireframe like, look."
+    },
+    "wired-textarea": {
+      "git": "https://github.com/wiredjs/wired-textarea",
+      "description": "A multi-line text field (auto-grows) with a hand-drawn, wireframe like, look"
+    },
+    "wired-card": {
+      "git": "https://github.com/wiredjs/wired-card",
+      "description": "wired-card is s a container for other web elements - with a hand-drawn, wireframe like, look."
+    },
+    "wired-combo": {
+      "git": "https://github.com/wiredjs/wired-combo",
+      "description": "Combobox control - similar to a native browser select element; with a hand-drawn, wireframe like, style."
+    },
+    "wired-icon-button": {
+      "git": "https://github.com/wiredjs/wired-icon-button",
+      "description": "This is a round button with an image placed at the center. Image could also be in icon, more specifically an icon as and iron-icon."
+    },
+    "wired-menu-item": {
+      "git": "https://github.com/wiredjs/wired-menu-item",
+      "description": "Menu item to be used with wired-menu-bar."
+    },
+    "wired-menu-bar": {
+      "git": "https://github.com/wiredjs/wired-menu-bar",
+      "description": "A simple menu bar with hand drawn look and feel."
+    },
+    "wired-slider": {
+      "git": "https://github.com/wiredjs/wired-slider",
+      "description": "A sketchy slider which allows user to select a value from a range by moving the slider thumb"
+    },
+    "wired-tooltip": {
+      "git": "https://github.com/wiredjs/wired-tooltip",
+      "description": "Tooltip with text that appears on hover over an element."
+    },
+    "wired-spinner": {
+      "git": "https://github.com/wiredjs/wired-spinner",
+      "description": "A circular activity indicator with a sketchy hand-drawn look"
     }
   }
 }

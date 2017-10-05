@@ -1,10 +1,10 @@
 {
-  "name": "indie-catalog",
-  "homepage": "https://github.com/notwaldorf/indie-catalog",
+  "name": "retro-app-catalog",
+  "homepage": "https://github.com/annsonn/retro-app-catalog",
   "authors": [
-    "Monica Dinculescu <noms@google.com>"
+    "Anson Chung"
   ],
-  "description": "a simple catalog for demoing elements",
+  "description": "a simple catalog for demoing elements for the retro-app",
   "main": "index.html",
   "license": "MIT",
   "private": true,

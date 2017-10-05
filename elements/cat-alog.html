@@ -30,8 +30,9 @@
         display: block;
       }
       app-header {
-        background-color: #fbbc05;
+        background-color: #62B4FC;
         color: rgba(0,0,0,.7);
+        border-bottom: 1px solid #3885C9;
       }
       app-toolbar {
         padding-left: 28px;
@@ -62,6 +63,16 @@
       list-item {
         padding: 8px 28px;
       }
+      
+      .left {
+        border-right: 1px solid grey;
+        background-color: #eeeeee;
+        flex: 1;
+      }
+      
+      .right {
+        flex: 2;
+      }
 
       @media (max-width: 767px) {
         .horizontal {
@@ -84,11 +95,11 @@
     <app-header-layout>
       <app-header style="height: 256px;" condenses fixed effects="resize-title" slot="header">
         <app-toolbar>
-          <div condensed-title>Indie elements catalog</div>
+          <div condensed-title>Retro App elements catalog</div>
         </app-toolbar>
         <app-toolbar></app-toolbar>
         <app-toolbar>
-          <div main-title>Indie elements catalog</div>
+          <div main-title>Retro App elements catalog</div>
         </app-toolbar>
       </app-header>
 
@@ -106,7 +117,7 @@
           </dom-repeat>
         </div>
         <div class="right">
-          <p id="help">💡 Choose a docs/demo from the menu to begin. </p>
+          <p id="help">Choose a docs/demo from the menu to begin. </p>
           <iframe hidden id="frame" frameBorder="0" height="100%" width="100%"></iframe>
         </div>
       </div>

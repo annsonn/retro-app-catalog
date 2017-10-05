@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "rm -rf bower_components && bower cache clean && bower install && gulp"
+    "build": "rm -rf bower_components && bower cache clean && bower install && gulp",
+    "start": "python -m SimpleHTTPServer 8081"
   },
   "repository": {
     "type": "git",
