@@ -6,8 +6,8 @@
 # dependencies to gh-pages.
 
 # Run in a clean directory passing in a GitHub org and repo name
-org="polymerlabs"
-repo="indie-catalog"
+org="annsonn"
+repo="retro-app-catalog"
 #branch="master" # default to master when branch isn't specified
 
 # make folder (same as input, no checking!)
