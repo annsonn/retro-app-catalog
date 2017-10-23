@@ -1,0 +1,104 @@
+<link rel="import" href="../wired-lib/wired-lib.html">
+
+<dom-module id="wired-input">
+  <template>
+    <style>
+       :host {
+        display: inline-block;
+        position: relative;
+        padding: 5px;
+        font-family: sans-serif;
+        width: 150px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+      }
+
+      svg {
+        display: block;
+      }
+
+      path {
+        stroke: currentColor;
+        stroke-width: 0.7;
+        fill: transparent;
+      }
+
+      input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        color: inherit;
+      }
+    </style>
+    <input id="txt" type="text" placeholder$="{{placeholder}}">
+    <div class="overlay">
+      <svg id="svg"></svg>
+    </div>
+  </template>
+
+  <script>
+    /**
+     * `wired-input`
+     * A single-line text field with hand-drawn, wireframe like, look. 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class WiredInput extends Polymer.Element {
+      static get is() { return 'wired-input'; }
+      static get properties() {
+        return {
+          placeholder: String
+        };
+      }
+
+      connectedCallback() {
+        super.connectedCallback();
+        this.style.opacity = 0;
+        Polymer.RenderStatus.beforeNextRender(this, () => {
+          setTimeout(() => {
+            this.relayout();
+            this.style.opacity = 1;
+          }, 150);
+        });
+      }
+
+      _clearNode(node) {
+        while (node.hasChildNodes()) {
+          node.removeChild(node.lastChild);
+        }
+      }
+
+      relayout() {
+        this._clearNode(this.$.svg);
+        var s = this.getBoundingClientRect();
+        this.$.svg.setAttribute("width", s.width);
+        this.$.svg.setAttribute("height", s.height);
+        _WIRES_.rectangle(this.$.svg, 0, 0, s.width, s.height);
+      }
+
+      get value() {
+        return this.$.txt.value;
+      }
+
+      set value(v) {
+        this.$.txt.value = v;
+      }
+    }
+
+    window.customElements.define(WiredInput.is, WiredInput);
+  </script>
+</dom-module>
