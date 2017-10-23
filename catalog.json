@@ -71,6 +71,11 @@
     "wired-spinner": {
       "git": "https://github.com/wiredjs/wired-spinner",
       "description": "A circular activity indicator with a sketchy hand-drawn look"
+    },
+    "polymerfire": {
+      "git": "https://github.com/firebase/polymerfire",
+      "docs": "https://www.webcomponents.org/element/firebase/polymerfire/elements/firebase-auth",
+      "description": "Polymer Web Components for Firebase"
     }
   }
 }
