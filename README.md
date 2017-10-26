@@ -8,7 +8,7 @@ webcomponents.org.
 ## Step 0. Clone this repo.
 ```
 git clone https://github.com/annsonn/retro-app-catalog.git
-cd indie-catalog
+cd retro-app-catalog
 ```
 
 ## Step 1. Configuration
